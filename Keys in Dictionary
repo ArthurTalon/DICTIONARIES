@@ -1,0 +1,13 @@
+#Code in Python
+
+n = 1
+gkeys = ["alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta",
+         "iota", "kappa", "lamda", "mu", "nu", "xi", "omicron", "pi", "rho",
+         "sigma_alt", "sigma", "tau", "upsilon", "phi", "chi", "psi", "omega"]  #list
+greek = {} #dictionary α, β, γ, δ, ϵ
+#### your code goes here ####
+for key in gkeys: #key is a temporary variable and it is defined when the loop is created. It holds the values in gkeys. On first iteration it will be alpha and so on.
+      greek[key] = chr(944+n)
+      n+=1
+for i in greek:
+      print (greek[i[0:]], end = "")
